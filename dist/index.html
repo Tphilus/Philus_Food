@@ -1,0 +1,714 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@Philus Food</title>
+    <link rel="stylesheet" href="index.css" />
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  </head>
+  <body class="text-gray-500 font-body scroll-smooth">
+    <div class="flex ">
+      <!-- CONTACT WRAPPER -->
+      <!-- START NAVBAR -->
+      <!-- <div class="md:col-[] md:flex md:justify-end">
+        <nav class="text-right">
+          <div class="flex justify-between items-center">
+            <h1 class="font-bold uppercase p-4 border-b border-gray-100">
+              <a href="/" class="hover:text-gray-700">@Philus Food</a>
+            </h1>
+            <div class="px-4 cursor-pointer md:hidden" id="burger">
+              <svg
+                class="w-6"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+                />
+              </svg>
+            </div>
+          </div>
+          <ul class="text-sm mt-6 hidden md:block" id="menu">
+            <li class="text-gray-700 font-bold py-1">
+              <a
+                href="#"
+                class="px-4 flex justify-end border-r-4 border-primary"
+              >
+                <span>Home</span>
+                <svg
+                  class="w-5 ml-2"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  strokeWidth="{1.5}"
+                  stroke="currentColor"
+                  className="w-6 h-6"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25"
+                  />
+                </svg>
+              </a>
+            </li>
+            <li class="py-1">
+              <a
+                href="#about"
+                class="px-4 flex justify-end border-r-4 border-transparent"
+              >
+                <span>About</span>
+                <svg
+                  class="w-5 ml-2"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-6 h-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M9.879 7.519c1.171-1.025 3.071-1.025 4.242 0 1.172 1.025 1.172 2.687 0 3.712-.203.179-.43.326-.67.442-.745.361-1.45.999-1.45 1.827v.75M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-9 5.25h.008v.008H12v-.008z"
+                  />
+                </svg>
+              </a>
+            </li>
+            <li class="py-1">
+              <a
+                href="#"
+                class="px-4 flex justify-end border-r-4 border-transparent"
+              >
+                <span>Contact</span>
+                <svg
+                  class="w-5 ml-2"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-6 h-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75"
+                  />
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </nav> -->
+      </div>
+      <!-- END NAVBAR -->
+
+      <!-- NAVBAR SECTION -->
+      <nav class="p-5 bg-gray-100 shadow md:flex md:text-center md:justify-between">
+        <div class="flex justify-between items-center">
+          <span class="text-2xl  md:mr-[-2rem] cursor-pointer">
+            <!-- <img src="./img/logo.png" alt="logo" class="h-10 inline-block" > -->
+            <h1 class="ml-8 inline-block"><a href="index.html">@Philus Food</a></h1>
+          </span>
+
+          <span class="text-3xl cursor-pointer mx-2 md:hidden block">
+            <ion-icon name="menu-outline" onclick="Menu(this)"></ion-icon>
+          </span>
+        </div>
+        <ul class="md:flex md:text-center z-[1] md:z-auto md:static absolute bg-gray-100 w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500">
+          <li class="mx-4 my-6 md:my-0 "><a href="index.html" class="text-xl hover:text-cyan-500 duration-500">Home</a></li>
+
+          <li class="mx-4 my-6 md:my-0"><a href="#about" class="text-xl hover:text-cyan-500  duration-500">About</a></li>
+
+          <li class="mx-4 my-6 md:my-0"><a href="#" class="text-xl hover:text-cyan-500 duration-500">Contact</a></li>
+
+          <!-- <button class="bg-cyan-400 text-white duration-500 px-4 py-2 hover:text-transparent hover:bg-gray-100 hover:text-cyan-400 hover:border-cyan-400 hover:border rounded">
+             Learn More
+          </button> -->
+        </ul>
+      </nav>
+
+      <main class="px-6 md:px-16 py-6 bg-gray-100 md:col-span-2 z-[-1]">
+        
+
+        <header class="mt-[4px] mx-5 mb-[10px] md:h-[100vh]">
+          <!-- <h2 class="text-gray-700 text-6xl font-semibold">Recipes</h2>
+          <h3 class="text-2xl font-semibold">For @Philus</h3> -->
+
+          <div class="flex flex-col-reverse md:flex-row md:justify-between md:gap-5">
+            <div class="mt-2 text-center md:mt-[6rem]">
+              <h1 class="text-[2rem] md:text-start md:text-[3.5rem] mt-12">
+                <span class="font-bold"> Groceries </span>
+              </h1>
+              <h1 class="mt-[-1] text-[1.5rem] md:text-[2rem] md:text-start "><span class="font-bold">delivery in</span> 15 mins</h1>
+              <div class="mt-[1px] md:text-start ">
+                <p class="md:w-[80%] text-center md:text-start">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Ducimus consequatur error ratione velit ad similique!
+                </p>
+              </div>
+            </div>
+            <div>
+              <img
+                src="./img/grocery-image.png"
+                alt="Home Page"
+                class="w-[32rem] md:w-[32rem] lg:w-[36rem]"
+              />
+            </div>
+          </div>
+        </header>
+
+        <div id="about"></div>
+
+        <div>
+          <h4 class="font-bold mt-12 pb-2 border-b border-gray-200" id="about">
+            Latest Recipes
+          </h4>
+
+          <div class="mt-8 grid md:grid-cols-2 lg:grid-cols-4 gap-10">
+            <!-- CARD GO IN HERE -->
+            <div class="card hover:shadow-lg">
+              <img
+                src="img/stew.jpg"
+                alt="stew"
+                class="w-full h-32 sm:h-48 object-cover"
+              />
+              <div class="m-4">
+                <span class="font-bold"> 5 Bean Chilli Stew </span>
+                <span class="block text-gray-500 text-sm">Recipe by Mario</span>
+              </div>
+              <div class="badge">
+                <svg
+                  class="w-5 inline-block"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  strokeWidth="{1.5}"
+                  stroke="currentColor"
+                  className="w-6 h-6"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z"
+                  />
+                </svg>
+
+                <span class="">25 min </span>
+              </div>
+            </div>
+
+            <div class="card hover:shadow-lg">
+              <img
+                src="img/noodles.jpg"
+                alt="noodles"
+                class="w-full h-32 sm:h-48 object-cover"
+              />
+              <div class="m-4">
+                <span class="font-bold"> Veg Noodles </span>
+                <span class="block text-gray-500 text-sm">Recipe by Mario</span>
+              </div>
+              <div class="badge">
+                <svg
+                  class="w-5 inline-block"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  strokeWidth="{1.5}"
+                  stroke="currentColor"
+                  className="w-6 h-6"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z"
+                  />
+                </svg>
+                <span class="">25 min </span>
+              </div>
+            </div>
+
+            <div class="card hover:shadow-lg">
+              <img
+                src="img/curry.jpg"
+                alt="curry"
+                class="w-full h-32 sm:h-48 object-cover"
+              />
+              <div class="m-4">
+                <span class="font-bold"> Tofu Curry </span>
+                <span class="block text-gray-500 text-sm">Recipe by Mario</span>
+              </div>
+              <div class="badge">
+                <svg
+                  class="w-5 inline-block"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  strokeWidth="{1.5}"
+                  stroke="currentColor"
+                  className="w-6 h-6"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z"
+                  />
+                </svg>
+                <span class="">25 min </span>
+              </div>
+            </div>
+
+            <div class="card hover:shadow-lg">
+              <img
+                src="img/f1.png"
+                alt="curry"
+                class="w-full h-32 sm:h-48 object-cover"
+              />
+              <div class="m-4">
+                <span class="font-bold"> Tofu Curry </span>
+                <span class="block text-gray-500 text-sm">Recipe by Mario</span>
+              </div>
+              <div class="badge">
+                <svg
+                  class="w-5 inline-block"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  strokeWidth="{1.5}"
+                  stroke="currentColor"
+                  className="w-6 h-6"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z"
+                  />
+                </svg>
+                <span class="">25 min </span>
+              </div>
+            </div>
+
+            <div class="card hover:shadow-lg">
+              <img
+                src="img/2.jpg"
+                alt="curry"
+                class="w-full h-32 sm:h-48 object-cover"
+              />
+              <div class="m-4">
+                <span class="font-bold"> Tofu Curry </span>
+                <span class="block text-gray-500 text-sm">Recipe by Mario</span>
+              </div>
+              <div class="badge">
+                <svg
+                  class="w-5 inline-block"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  strokeWidth="{1.5}"
+                  stroke="currentColor"
+                  className="w-6 h-6"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z"
+                  />
+                </svg>
+                <span class="">25 min </span>
+              </div>
+            </div>
+
+            <div class="card hover:shadow-lg">
+              <img
+                src="img/3.jpg"
+                alt="curry"
+                class="w-full h-32 sm:h-48 object-cover"
+              />
+              <div class="m-4">
+                <span class="font-bold"> Tofu Curry </span>
+                <span class="block text-gray-500 text-sm">Recipe by Mario</span>
+              </div>
+              <div class="badge">
+                <svg
+                  class="w-5 inline-block"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  strokeWidth="{1.5}"
+                  stroke="currentColor"
+                  className="w-6 h-6"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z"
+                  />
+                </svg>
+                <span class="">25 min </span>
+              </div>
+            </div>
+
+            <div class="card hover:shadow-lg">
+              <img
+                src="img/Rectangle 15.jpg"
+                alt="stew"
+                class="w-full h-32 sm:h-48 object-cover"
+              />
+              <div class="m-4">
+                <span class="font-bold"> 5 Bean Chilli Stew </span>
+                <span class="block text-gray-500 text-sm">Recipe by Mario</span>
+              </div>
+              <div class="badge">
+                <svg
+                  class="w-5 inline-block"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  strokeWidth="{1.5}"
+                  stroke="currentColor"
+                  className="w-6 h-6"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z"
+                  />
+                </svg>
+
+                <span class="">25 min </span>
+              </div>
+            </div>
+
+            <div class="card hover:shadow-lg">
+              <img
+                src="img/Rectangle 16.jpg"
+                alt="stew"
+                class="w-full h-32 sm:h-48 object-cover"
+              />
+              <div class="m-4">
+                <span class="font-bold"> 5 Bean Chilli Stew </span>
+                <span class="block text-gray-500 text-sm">Recipe by Mario</span>
+              </div>
+              <div class="badge">
+                <svg
+                  class="w-5 inline-block"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  strokeWidth="{1.5}"
+                  stroke="currentColor"
+                  className="w-6 h-6"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z"
+                  />
+                </svg>
+
+                <span class="">25 min </span>
+              </div>
+            </div>
+          </div>
+
+          <h4 class="font-bold mt-12 pb-2 border-b border-gray-200">
+            Most Popular
+          </h4>
+
+          <div class="mt-8 grid md:grid-cols-2 lg:grid-cols-4 gap-10">
+            <!-- CARD GO IN HERE -->
+            <div class="card hover:shadow-lg">
+              <img
+                src="img/rice1.jpg"
+                alt="stew"
+                class="w-full h-32 sm:h-48 object-cover"
+              />
+              <div class="m-4">
+                <span class="font-bold"> 5 Bean Chilli Stew </span>
+                <span class="block text-gray-500 text-sm">Recipe by Mario</span>
+              </div>
+              <div class="badge">
+                <svg
+                  class="w-5 inline-block"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  strokeWidth="{1.5}"
+                  stroke="currentColor"
+                  className="w-6 h-6"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z"
+                  />
+                </svg>
+
+                <span class="">25 min </span>
+              </div>
+            </div>
+
+            <div class="card hover:shadow-lg">
+              <img
+                src="img/Group 11.jpg"
+                alt="stew"
+                class="w-full h-32 sm:h-48 object-cover"
+              />
+              <div class="m-4">
+                <span class="font-bold"> 5 Bean Chilli Stew </span>
+                <span class="block text-gray-500 text-sm">Recipe by Mario</span>
+              </div>
+              <div class="badge">
+                <svg
+                  class="w-5 inline-block"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  strokeWidth="{1.5}"
+                  stroke="currentColor"
+                  className="w-6 h-6"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z"
+                  />
+                </svg>
+
+                <span class="">25 min </span>
+              </div>
+            </div>
+
+            <div class="card hover:shadow-lg">
+              <img
+                src="img/f6.png"
+                alt="stew"
+                class="w-full h-32 sm:h-48 object-cover"
+              />
+              <div class="m-4">
+                <span class="font-bold"> 5 Bean Chilli Stew </span>
+                <span class="block text-gray-500 text-sm">Recipe by Mario</span>
+              </div>
+              <div class="badge">
+                <svg
+                  class="w-5 inline-block"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  strokeWidth="{1.5}"
+                  stroke="currentColor"
+                  className="w-6 h-6"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z"
+                  />
+                </svg>
+
+                <span class="">25 min </span>
+              </div>
+            </div>
+
+            <div class="card hover:shadow-lg">
+              <img
+                src="img/cat2.png"
+                alt="stew"
+                class="w-full h-32 sm:h-48 object-cover"
+              />
+              <div class="m-4">
+                <span class="font-bold"> 5 Bean Chilli Stew </span>
+                <span class="block text-gray-500 text-sm">Recipe by Mario</span>
+              </div>
+              <div class="badge">
+                <svg
+                  class="w-5 inline-block"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  strokeWidth="{1.5}"
+                  stroke="currentColor"
+                  className="w-6 h-6"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z"
+                  />
+                </svg>
+
+                <span class="">25 min </span>
+              </div>
+            </div>
+
+            <div class="card hover:shadow-lg">
+              <img
+                src="img/f4.png"
+                alt="stew"
+                class="w-full h-32 sm:h-48 object-cover"
+              />
+              <div class="m-4">
+                <span class="font-bold"> 5 Bean Chilli Stew </span>
+                <span class="block text-gray-500 text-sm">Recipe by Mario</span>
+              </div>
+              <div class="badge">
+                <svg
+                  class="w-5 inline-block"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  strokeWidth="{1.5}"
+                  stroke="currentColor"
+                  className="w-6 h-6"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z"
+                  />
+                </svg>
+
+                <span class="">25 min </span>
+              </div>
+            </div>
+
+            <div class="card hover:shadow-lg">
+              <img
+                src="img/f2.png"
+                alt="stew"
+                class="w-full h-32 sm:h-48 object-cover"
+              />
+              <div class="m-4">
+                <span class="font-bold"> 5 Bean Chilli Stew </span>
+                <span class="block text-gray-500 text-sm">Recipe by Mario</span>
+              </div>
+              <div class="badge">
+                <svg
+                  class="w-5 inline-block"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  strokeWidth="{1.5}"
+                  stroke="currentColor"
+                  className="w-6 h-6"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z"
+                  />
+                </svg>
+
+                <span class="">25 min </span>
+              </div>
+            </div>
+
+            <div class="card hover:shadow-lg">
+              <img
+                src="img/rounded.png"
+                alt="stew"
+                class="w-full h-32 sm:h-48 object-cover"
+              />
+              <div class="m-4">
+                <span class="font-bold"> 5 Bean Chilli Stew </span>
+                <span class="block text-gray-500 text-sm">Recipe by Mario</span>
+              </div>
+              <div class="badge">
+                <svg
+                  class="w-5 inline-block"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  strokeWidth="{1.5}"
+                  stroke="currentColor"
+                  className="w-6 h-6"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z"
+                  />
+                </svg>
+
+                <span class="">25 min </span>
+              </div>
+            </div>
+
+            <div class="card hover:shadow-lg">
+              <img
+                src="img/cat3.png"
+                alt="stew"
+                class="w-full h-32 sm:h-48 object-cover"
+              />
+              <div class="m-4">
+                <span class="font-bold"> 5 Bean Chilli Stew </span>
+                <span class="block text-gray-500 text-sm">Recipe by Mario</span>
+              </div>
+              <div class="badge">
+                <svg
+                  class="w-5 inline-block"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  strokeWidth="{1.5}"
+                  stroke="currentColor"
+                  className="w-6 h-6"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z"
+                  />
+                </svg>
+
+                <span class="">25 min </span>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="flex justify-center mt-7">
+            <div
+              class="btn bg-secondary-100 text-secondary-200 hover:shadow-inner transform hover:scale-125 hover:bg-opacity-50 transition ease-out duration-300 hover:font-bold"
+            >
+              Load More
+            </div>
+          </div>
+        </div>
+
+        
+      </main>
+
+      <!-- OUR THEM SECTION -->
+      <div class="px-6 grid md:grid-cols-2 md:mt-10 gap-4 md:px-20">
+        <div class=" mb-4 md:mt-[5rem] md:ml-10">
+           <h1 class="text-3xl sm:text-center md:text-start font-bold md:text-3xl ">
+            Lorem ipsum dolor sit amet consectetur adipisicing doloribus nam amet!
+           </h1>
+          <p class="mt-2 md:text-justify sm:text-center text-justify ">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis eum dolore vitae quidem eligendi optio neque. Quisquam sint, repudiandae ea reiciendis amet necessitatibus quos laudantium?
+          </p>
+        </div>
+
+        <!-- 2 -->
+        <div>
+          <img src="./img/Chef card.png" alt="" class="sm:bg-center md:w-[20rem] md:ml-20" >
+        </div>
+      </div>
+
+      <!-- about -->
+
+    </div>
+    
+    <script src="/dist/script.js"></script>
+  </body>
+</html>
